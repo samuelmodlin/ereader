@@ -1,0 +1,25 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed|Yatra+One';
+.chapter-thumbnail {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 10px;
+  white-space : pre;
+  overflow : hidden;
+  max-height: 150px;
+  height : 150px;
+  border-radius: 10px;
+}
+.chapter-thumbnail:hover {
+  background-color: lightgray;
+}
+#mainViewer, #splitViewer {
+  font-family: 'Yatra One', cursive;
+  margin-top: 10px;
+  white-space : pre;
+  display:block;
+}
+.button-wrap {
+  text-align:center;
+}
+#red {
+  background-color; red;
+}

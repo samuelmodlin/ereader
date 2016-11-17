@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <!--
+  Student: Samuel Modlin
+  Assignment: E-Reader
+  Date: September 15th
+-->
+<title>E-Reader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="css/bootswatch.css" rel = "stylesheet">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class = "col-md-12 button-wrap">
+        <ul class = "pagination">
+          <li class = "control" id = "backward"><a href="#">&laquo;</a></li>
+          <li class = "pag" id = "0"><a href="#">0</a></li>
+          <li class = "pag" id = "1"><a href="#">1</a></li>
+          <li class = "pag" id = "2"><a href="#">2</a></li>
+          <li class = "pag" id = "3"><a href="#">3</a></li>
+          <li class = "pag" id = "4"><a href="#">4</a></li>
+          <li class = "pag" id = "5"><a href="#">5</a></li>
+          <li class = "control" id = "forward"><a href="#">&raquo;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class = "button-wrap">
+      <button style ="width: 75%; margin-right: auto; margin-left: auto" class = "btn btn-default btn-lg btn-block btn-success" id = "split"><span id = "split1" class="glyphicon glyphicon-triangle-left"></span>Toggle Split View<span id = "split2" class="glyphicon glyphicon-triangle-right"></span></button>
+    </div>
+    <div class="row">
+      <div id = "colSmall" class="col-md-3">
+        <ul class="list-group scrollable" id="chapterlist">
+          <li id="chapter0" class="list-group-item chapter-thumbnail">
+<kbd>Act 1</kbd>
+Hamlet
+By William Shakespeare
+          </li>
+          <li id="chapter1" class="list-group-item chapter-thumbnail">
+          </li>
+          <li id="chapter2" class="list-group-item chapter-thumbnail">
+          </li>
+          <li id="chapter3" class="list-group-item chapter-thumbnail">
+          </li>
+          <li id="chapter4" class="list-group-item chapter-thumbnail">
+          </li>
+          <li id="chapter5" class="list-group-item chapter-thumbnail">
+          </li>
+        </ul>
+      </div>
+      <div class="colMed col-md-9">
+        <div class="well" id="mainViewer">
+
+        </div>
+      </div>
+      <div id = "hid" style = "display:none;" class = "colMed">
+        <div class = "well" id = "splitViewer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src = "script.js"></script>
+</body>
+</html>
